@@ -1,0 +1,168 @@
+*{
+    margin:0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .navigation-bar */
+.navigation-bar{
+    width: 100vw;
+    height:60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.nav-logo{
+
+   
+    height:50px;
+    width:auto;
+}
+
+.logo{
+ 
+   
+    background-image: url("/images/613f661716381700041030fc.png");
+    background-size: cover;
+    height: 50px;
+    width:80px;
+}
+
+.search-and-searchIcon{
+    margin-left: 25px;
+    display: flex;
+    color:white;
+    align-items: center;
+}
+
+.searchInput{
+    height: 30px;
+    width: 400px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    border:none;
+}
+.search-icon{
+   
+  
+     height:32px;
+    width:40px;
+
+
+    background-color: rgb(247, 191, 5);
+
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+   
+}
+
+
+.favourite {
+    height: 32px;
+    width: 40px;
+    font-size: 20px;
+   margin-left: 15px;
+  /* background-color: darkorange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/* movie section/ */
+.backgroundMoviesCard {
+    background-color: #cccc;
+    width: 90%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.outer-card {
+    height: 400px;
+    width: 20%;
+
+    margin-left: 20px;
+    margin-top: 70px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255); 
+    position: relative; /* Add relative positioning */
+}
+
+.card {
+    height: 100%; /* Fill all the space of the outer card */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+}
+
+.btn {
+    width: 80%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    margin-bottom: 10px;
+    position: absolute; /* Position the button absolutely */
+    bottom: -20px; /* Adjust the button's position */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    z-index: 3;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* big card */
+
+.big-card{
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.details{
+    
+    max-width: 300px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
