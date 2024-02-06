@@ -186,7 +186,7 @@ function displayPoster(array) {
 }
 
 function fetchMovies(movieName) {
-    fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=12e7b5bd`)
+    fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=12e7b5bd`)
         .then(function(response) {
             return response.json();
         })
@@ -248,7 +248,7 @@ function displayFavoriteMovies() {
 
 // Function to fetch movie by ID
 function fetchMovieById(movieId) {
-    return fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=12e7b5bd`)
+    return fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=12e7b5bd`)
         .then(function(response) {
             return response.json();
         });
