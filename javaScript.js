@@ -269,6 +269,10 @@ function createMovieCard(movie) {
     button.classList.add('btn');
     button.textContent = arr.includes(movie.imdbID) ? 'Remove from Favorite' : 'Add to Favorite';
 
+     card.addEventListener('click',function(){
+        displayMovieDetails(movie.imdbID);
+    });
+
     outerCard.appendChild(button);
 
     button.addEventListener('click', function() {
